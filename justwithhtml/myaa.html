@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* CSS Global variables */
+
+    :root {
+      --full-font-size: clamp(100%, 66% + 0.33vw, 150%);
+      font-size: var(--full-font-size);
+      --primary-color: blue;
+      --primary-color-dark: darkblue;
+      --primary-color-lighter: lightblue;
+      --secondary-color-dark: #3c7082;
+      --secondary-color-lighter: #999;
+      --primary-box-shadow: 0 0 3rem 1rem rgba(22, 6, 124, 0.8);
+      --secondary-box-shadow: 0 0 3rem 1rem rgba(243, 239, 10, 0.4);
+    }
+
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+      /* need this here so inherit on button works */
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--secondary-color-dark);
+      color: var(--secondary-color-lighter);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    button {
+      margin-top: 0.5rem;
+      margin-left: 0.5%;
+      cursor: pointer;
+      outline: none;
+      text-decoration: none;
+      font-family: inherit;
+    }
+
+    .debugoutline {
+      outline: 1px dashed red;
+    }
+
+    /* end CSS Global variables */
+
+    /* buttons */
+
+    .secondarybtn {
+      width: max(24%, 8rem);
+      border: 0.2rem solid var(--secondary-color-lighter);
+      border-radius: 0.9rem;
+      padding: 0.25rem;
+      color: var(--secondary-color-dark);
+      transition: all 500ms ease;
+      text-align: center;
+    }
+
+    .halffontsize {
+      font-size: 70%;
+    }
+
+    .secondarybtn:hover {
+      background: var(--primary-color-lighter);
+      box-shadow: var(--secondary-box-shadow);
+    }
+
+    /* end buttons */
+
+    /* nav bars */
+
+    .principalsnavbar {
+      margin: 3% 5%;
+      height: 100%;
+      padding: 2rem;
+      border: 0.4rem solid var(--secondary-color-lighter);
+      border-radius: 3rem;
+      box-shadow: var(--primary-box-shadow);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    /* end nav bars */
+
+    #container {
+      display: grid;
+    }
+
+    .scrolls {
+      margin: 3% 5%;
+      height: 100%;
+      padding: 2rem;
+      border: 0.4rem solid var(--secondary-color-lighter);
+      border-radius: 3rem;
+      box-shadow: var(--primary-box-shadow);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-evenly;
+    }
+
+    .principalsshortdescription {
+      width: min(45%, 40rem);
+    }
+
+    .scrolls div p {
+      height: 7em;
+    }
+  </style>
+  <title>Flexbox</title>
+</head>
+
+<body>
+  <main>
+    <section id="container">
+      <header>header</header>
+      <section class="content">
+        <nav id="stepsnavbar" class="principalsnavbar">
+          <button class="secondarybtn">Step 1</button>
+          <button class="secondarybtn">Step 2</button>
+          <button class="secondarybtn">Step 3</button>
+          <button class="secondarybtn">Step 4</button>
+          <button class="secondarybtn">Step 5</button>
+          <button class="secondarybtn">Step 6</button>
+          <button class="secondarybtn">Step 7</button>
+          <button class="secondarybtn">Step 8</button>
+          <button class="secondarybtn">Step 9</button>
+          <button class="secondarybtn">Step 10</button>
+          <button class="secondarybtn">Step 11</button>
+          <button class="secondarybtn">Step 12</button>
+        </nav>
+        <nav id="traditionsnavbar" class="principalsnavbar">
+          <button class="secondarybtn halffontsize">Tradition 1</button>
+          <button class="secondarybtn halffontsize">Tradition 2</button>
+          <button class="secondarybtn halffontsize">Tradition 3</button>
+          <button class="secondarybtn halffontsize">Tradition 4</button>
+          <button class="secondarybtn halffontsize">Tradition 5</button>
+          <button class="secondarybtn halffontsize">Tradition 6</button>
+          <button class="secondarybtn halffontsize">Tradition 7</button>
+          <button class="secondarybtn halffontsize">Tradition 8</button>
+          <button class="secondarybtn halffontsize">Tradition 9</button>
+          <button class="secondarybtn halffontsize">Tradition 10</button>
+          <button class="secondarybtn halffontsize">Tradition 11</button>
+          <button class="secondarybtn halffontsize">Tradition 12</button>
+        </nav>
+        <div class="scrolls">
+          <div id="steps" class="principalsshortdescription debugoutline">
+            <p id="step01">
+              "We admitted we were powerless over alcohol, that our lives had become unmanageable."
+            </p>
+            <p id="step02">
+              "Came to believe that a Power greater than ourselves could restore us to sanity."
+            </p>
+            <p id="step03">
+              "Made a decision to turn our will and our lives over to the care of God as we understood him."
+            </p>
+            <p id="step04">
+              "Made a searching and fearless moral inventory of ourselves."
+            </p>
+            <p id="step05">
+              "Admitted to God, to ourselves, and to another human being the exact nature of our wrongs."
+            </p>
+            <p id="step06">
+              "Were entirely ready to have God remove all these defects of character."
+            </p>
+            <p id="step07">
+              "Humbly asked him to remove our shortcomings."
+            </p>
+            <p id="step08">
+              "Made a list of all persons we had harmed, and became willing to make amends to them all."
+            </p>
+            <p id="step09">
+              "Made direct amends to such people whereever possible, except when to do so would injure them or others."
+            </p>
+            <p id="step10">
+              "Continue to take personnel inventory and when we where wrong promptly admitted it."
+            </p>
+            <p id="step11">
+              "Sought through prayer and meditation to improve our conscious contact with God as we understood him,
+              praying only for knowledge of his will for us and the power to carry that out."
+            </p>
+            <p id="step12">
+              "Having had a spiritual awakening as the result of these steps, we tried to carry this message to
+              alcoholics
+              and practice these principles in all our affairs."
+            </p>
+          </div>
+          <div id="traditions" class="principalsshortdescription debugoutline">
+            <p id="tradition01">
+              "Our common welfare should come first; personal recovery depends upon AA unity."
+            </p>
+            <p id="tradition02">
+              "For our group purpose there is but one ultimate authority - a loving God as He may express himself in our
+              group conscience. Our leaders are but trusted servants, they do not govern."
+            </p>
+            <p id="tradition03">
+              "The only requirement for AA membership is a desire to stop drinking."
+            </p>
+            <p id="tradition04">
+              "Each group should be autonomous except in matters affecting other groups or AA as a whole."
+            </p>
+            <p id="tradition05">
+              "Each group has but one primary purpose - to carry its message to the alcholic who still suffers."
+            </p>
+            <p id="tradition06">
+              "An AA group ought never endorse, finance, or lend the AA name to any related facility or outside
+              enterprise, lest problems of money, property and prestige divert us from our primary purpose."
+            </p>
+            <p id="tradition07">
+              "Every AA group ought to be fully self-supporting, declining outside contributions."
+            </p>
+            <p id="tradition08">
+              "Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special
+              workers."
+            </p>
+            <p id="tradition09">
+              "AA, as such, ought never be organised, but we may create boards or committes directly responsible to
+              those
+              they serve."
+            </p>
+            <p id="tradition10">
+              "Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into public
+              controversy."
+            </p>
+            <p id="tradition11">
+              "Our public relations policy is based on attraction rather than promotion; we need always maintain
+              personal
+              anonymity at the level of press, radio and films."
+            </p>
+            <p id="tradition12">
+              "Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles before
+              personalities."
+            </p>
+          </div>
+        </div>
+        <div class="pertinentideas">
+          <p id="pertinentidea-a">
+            "That we were alcoholic and could not manage our own lives."
+          </p>
+          <p id="pertinentidea-b">
+            "That probably no human power could have relieved our alcohlism."
+          </p>
+          <p id="pertinentidea-c">
+            "That God could and would if He was sought."
+          </p>
+        </div>
+      </section>
+      <footer>footer</footer>
+    </section>
+  </main>
+</body>
+
+</html>
