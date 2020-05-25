@@ -1,0 +1,27 @@
+<!-- <svg height="16" width="16" id="svg2">
+  <circle cx="7" cy="7" r="4" stroke="black" stroke-width="1" fill="red" />
+</svg>
+ -->
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 50 50"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              stroke="silver"
+              stroke-width="2"
+              cx="25"
+              cy="25"
+              r="23"
+              fill="blue"
+            />
+            <polygon
+              stroke="silver"
+              stroke-width="2"
+              points="25,4 11,40 39,40"
+              fill="transparent"
+              class="triangle"
+            />
+            Sorry, your browser does not support inline SVG.
+          </svg>
