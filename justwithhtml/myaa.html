@@ -8,7 +8,7 @@
     /* CSS Global variables */
 
     :root {
-      --full-font-size: clamp(100%, 66% + 0.33vw, 150%);
+      --full-font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
       font-size: var(--full-font-size);
       --primary-color: blue;
       --primary-color-dark: darkblue;
@@ -125,13 +125,12 @@
       border-radius: 3rem;
       box-shadow: var(--primary-box-shadow);
       display: flex;
-      flex-wrap: wrap;
-      align-items: flex-start;
+      flex-direction: column;
       justify-content: space-evenly;
     }
 
-    .principalsshortdescription {
-      width: clamp(45%, 20rem + 12vw, 100%);
+    .scrolls div p {
+      font-size: 70%;
     }
   </style>
   <link rel="icon" href="aafavicon.svg" type="image/svg+xml" />
