@@ -113,9 +113,15 @@
 
     /* end nav bars */
 
+    /* make adaptive  */
+
     #container {
       display: grid;
     }
+
+    /* end make adaptive  */
+
+    /* scrolls steps and traditions */
 
     .scrolls {
       margin: 3% 5%;
@@ -125,13 +131,24 @@
       border-radius: 3rem;
       box-shadow: var(--primary-box-shadow);
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: center;
     }
 
-    .scrolls div p {
-      font-size: 70%;
+    .principalsshortdescription {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
     }
+
+    .principalsshortdescription p {
+      font-size: 70%;
+      width: min(100%, 55ch);
+      line-height: 1.2;
+      color: aquamarine;
+    }
+
+    /* scrolls steps and traditions */
   </style>
   <link rel="icon" href="aafavicon.svg" type="image/svg+xml" />
   <title>myaa</title>
