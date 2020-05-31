@@ -9,14 +9,15 @@
 
     :root {
       --full-font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
+      --medium-font-size: 70%;
       font-size: var(--full-font-size);
       --primary-color: blue;
       --primary-color-dark: darkblue;
       --primary-color-lighter: lightblue;
       --secondary-color-dark: #3c7082;
       --secondary-color-lighter: #999;
-      --primary-box-shadow: 0 0 3rem 1rem rgba(22, 6, 124, 0.8);
-      --secondary-box-shadow: 0 0 3rem 1rem rgba(243, 239, 10, 0.4);
+      --primary-box-shadow: 0 0 1rem 0.3rem rgba(22, 6, 124, 0.4);
+      --secondary-box-shadow: 0 0 1rem 0.3rem rgba(243, 239, 10, 0.2);
     }
 
     * {
@@ -25,13 +26,18 @@
       margin: 0;
       /* need this here so inherit on button works */
       font-size: 1rem;
-      line-height: 1.5rem;
+      line-height: 1.2;
     }
 
     body {
       font-family: Arial, Helvetica, sans-serif;
       background-color: var(--secondary-color-dark);
       color: var(--secondary-color-lighter);
+    }
+
+
+    .mediumfontsize {
+      font-size: var(--medium-font-size);
     }
 
     ul {
@@ -83,10 +89,7 @@
       color: var(--secondary-color-dark);
       transition: all 500ms ease;
       text-align: center;
-    }
-
-    .halffontsize {
-      font-size: 70%;
+      line-height: 1.5rem;
     }
 
     .secondarybtn:hover {
@@ -131,7 +134,9 @@
       border-radius: 3rem;
       box-shadow: var(--primary-box-shadow);
       display: flex;
+      flex-wrap: wrap;
       justify-content: center;
+      align-items: flex-start;
     }
 
     .principalsshortdescription {
@@ -139,13 +144,18 @@
       flex-direction: column;
       justify-content: center;
       text-align: left;
+      color: aquamarine;
+      width: min(51%, 20rem);
     }
 
-    .principalsshortdescription p {
-      font-size: 70%;
+    #steps.principalsshortdescription p {
+      font-size: 100%;
       width: min(100%, 55ch);
-      line-height: 1.2;
-      color: aquamarine;
+    }
+
+    #traditions.principalsshortdescription p {
+      font-size: 90%;
+      width: min(100%, 60ch);
     }
 
     /* scrolls steps and traditions */
@@ -174,118 +184,118 @@
           <button class="secondarybtn">Step 12</button>
         </nav>
         <nav id="traditionsnavbar" class="principalsnavbar">
-          <button class="secondarybtn halffontsize">Tradition 1</button>
-          <button class="secondarybtn halffontsize">Tradition 2</button>
-          <button class="secondarybtn halffontsize">Tradition 3</button>
-          <button class="secondarybtn halffontsize">Tradition 4</button>
-          <button class="secondarybtn halffontsize">Tradition 5</button>
-          <button class="secondarybtn halffontsize">Tradition 6</button>
-          <button class="secondarybtn halffontsize">Tradition 7</button>
-          <button class="secondarybtn halffontsize">Tradition 8</button>
-          <button class="secondarybtn halffontsize">Tradition 9</button>
-          <button class="secondarybtn halffontsize">Tradition 10</button>
-          <button class="secondarybtn halffontsize">Tradition 11</button>
-          <button class="secondarybtn halffontsize">Tradition 12</button>
+          <button class="secondarybtn mediumfontsize">Tradition 1</button>
+          <button class="secondarybtn mediumfontsize">Tradition 2</button>
+          <button class="secondarybtn mediumfontsize">Tradition 3</button>
+          <button class="secondarybtn mediumfontsize">Tradition 4</button>
+          <button class="secondarybtn mediumfontsize">Tradition 5</button>
+          <button class="secondarybtn mediumfontsize">Tradition 6</button>
+          <button class="secondarybtn mediumfontsize">Tradition 7</button>
+          <button class="secondarybtn mediumfontsize">Tradition 8</button>
+          <button class="secondarybtn mediumfontsize">Tradition 9</button>
+          <button class="secondarybtn mediumfontsize">Tradition 10</button>
+          <button class="secondarybtn mediumfontsize">Tradition 11</button>
+          <button class="secondarybtn mediumfontsize">Tradition 12</button>
         </nav>
         <div class="scrolls">
-          <div id="steps" class="principalsshortdescription debugoutline">
+          <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
             <p id="step01">
-              "We admitted we were powerless over alcohol, that our lives had become unmanageable."
+              We admitted we were powerless over alcohol, that our lives had become unmanageable.
             </p>
             <p id="step02">
-              "Came to believe that a Power greater than ourselves could restore us to sanity."
+              Came to believe that a Power greater than ourselves could restore us to sanity.
             </p>
             <p id="step03">
-              "Made a decision to turn our will and our lives over to the care of God as we understood him."
+              Made a decision to turn our will and our lives over to the care of God as we understood him.
             </p>
             <p id="step04">
-              "Made a searching and fearless moral inventory of ourselves."
+              Made a searching and fearless moral inventory of ourselves.
             </p>
             <p id="step05">
-              "Admitted to God, to ourselves, and to another human being the exact nature of our wrongs."
+              Admitted to God, to ourselves, and to another human being the exact nature of our wrongs.
             </p>
             <p id="step06">
-              "Were entirely ready to have God remove all these defects of character."
+              Were entirely ready to have God remove all these defects of character.
             </p>
             <p id="step07">
-              "Humbly asked him to remove our shortcomings."
+              Humbly asked him to remove our shortcomings.
             </p>
             <p id="step08">
-              "Made a list of all persons we had harmed, and became willing to make amends to them all."
+              Made a list of all persons we had harmed, and became willing to make amends to them all.
             </p>
             <p id="step09">
-              "Made direct amends to such people whereever possible, except when to do so would injure them or others."
+              Made direct amends to such people whereever possible, except when to do so would injure them or others.
             </p>
             <p id="step10">
-              "Continue to take personnel inventory and when we where wrong promptly admitted it."
+              Continue to take personnel inventory and when we where wrong promptly admitted it.
             </p>
             <p id="step11">
-              "Sought through prayer and meditation to improve our conscious contact with God as we understood him,
-              praying only for knowledge of his will for us and the power to carry that out."
+              Sought through prayer and meditation to improve our conscious contact with God as we understood him,
+              praying only for knowledge of his will for us and the power to carry that out.
             </p>
             <p id="step12">
-              "Having had a spiritual awakening as the result of these steps, we tried to carry this message to
+              Having had a spiritual awakening as the result of these steps, we tried to carry this message to
               alcoholics
-              and practice these principles in all our affairs."
+              and practice these principles in all our affairs.
             </p>
           </div>
-          <div id="traditions" class="principalsshortdescription debugoutline">
+          <div id="traditions" class="principalsshortdescription mediumfontsize debugoutline">
             <p id="tradition01">
-              "Our common welfare should come first; personal recovery depends upon AA unity."
+              Our common welfare should come first; personal recovery depends upon AA unity.
             </p>
             <p id="tradition02">
-              "For our group purpose there is but one ultimate authority - a loving God as He may express himself in our
-              group conscience. Our leaders are but trusted servants, they do not govern."
+              For our group purpose there is but one ultimate authority - a loving God as He may express himself in our
+              group conscience. Our leaders are but trusted servants, they do not govern.
             </p>
             <p id="tradition03">
-              "The only requirement for AA membership is a desire to stop drinking."
+              The only requirement for AA membership is a desire to stop drinking.
             </p>
             <p id="tradition04">
-              "Each group should be autonomous except in matters affecting other groups or AA as a whole."
+              Each group should be autonomous except in matters affecting other groups or AA as a whole.
             </p>
             <p id="tradition05">
-              "Each group has but one primary purpose - to carry its message to the alcholic who still suffers."
+              Each group has but one primary purpose - to carry its message to the alcholic who still suffers.
             </p>
             <p id="tradition06">
-              "An AA group ought never endorse, finance, or lend the AA name to any related facility or outside
-              enterprise, lest problems of money, property and prestige divert us from our primary purpose."
+              An AA group ought never endorse, finance, or lend the AA name to any related facility or outside
+              enterprise, lest problems of money, property and prestige divert us from our primary purpose.
             </p>
             <p id="tradition07">
-              "Every AA group ought to be fully self-supporting, declining outside contributions."
+              Every AA group ought to be fully self-supporting, declining outside contributions.
             </p>
             <p id="tradition08">
-              "Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special
-              workers."
+              Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special
+              workers.
             </p>
             <p id="tradition09">
-              "AA, as such, ought never be organised, but we may create boards or committes directly responsible to
+              AA, as such, ought never be organised, but we may create boards or committes directly responsible to
               those
-              they serve."
+              they serve.
             </p>
             <p id="tradition10">
-              "Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into public
-              controversy."
+              Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into public
+              controversy.
             </p>
             <p id="tradition11">
-              "Our public relations policy is based on attraction rather than promotion; we need always maintain
+              Our public relations policy is based on attraction rather than promotion; we need always maintain
               personal
-              anonymity at the level of press, radio and films."
+              anonymity at the level of press, radio and films.
             </p>
             <p id="tradition12">
-              "Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles before
-              personalities."
+              Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles before
+              personalities.
             </p>
           </div>
         </div>
         <div class="pertinentideas">
           <p id="pertinentidea-a">
-            "That we were alcoholic and could not manage our own lives."
+            a) That we were alcoholic and could not manage our own lives.
           </p>
           <p id="pertinentidea-b">
-            "That probably no human power could have relieved our alcohlism."
+            b) That probably no human power could have relieved our alcohlism.
           </p>
           <p id="pertinentidea-c">
-            "That God could and would if He was sought."
+            c) That God could and would if He was sought.
           </p>
         </div>
       </section>
