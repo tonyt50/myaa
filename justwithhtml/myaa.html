@@ -24,8 +24,6 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      /* need this here so inherit on button works */
-      font-size: 1rem;
       line-height: 1.2;
     }
 
@@ -65,12 +63,9 @@
     }
 
     button {
-      margin-top: 0.5rem;
-      margin-left: 0.5%;
       cursor: pointer;
       outline: none;
       text-decoration: none;
-      font-family: inherit;
     }
 
     .debugoutline {
@@ -83,9 +78,12 @@
 
     .secondarybtn {
       width: max(24%, 8rem);
+      font: inherit;
       border: 0.2rem solid var(--secondary-color-lighter);
       border-radius: 0.9rem;
       padding: 0.25rem;
+      margin-top: 0.5rem;
+      margin-left: 0.5%;
       color: var(--secondary-color-dark);
       transition: all 500ms ease;
       text-align: center;
@@ -183,19 +181,19 @@
           <button class="secondarybtn">Step 11</button>
           <button class="secondarybtn">Step 12</button>
         </nav>
-        <nav id="traditionsnavbar" class="principalsnavbar">
-          <button class="secondarybtn mediumfontsize">Tradition 1</button>
-          <button class="secondarybtn mediumfontsize">Tradition 2</button>
-          <button class="secondarybtn mediumfontsize">Tradition 3</button>
-          <button class="secondarybtn mediumfontsize">Tradition 4</button>
-          <button class="secondarybtn mediumfontsize">Tradition 5</button>
-          <button class="secondarybtn mediumfontsize">Tradition 6</button>
-          <button class="secondarybtn mediumfontsize">Tradition 7</button>
-          <button class="secondarybtn mediumfontsize">Tradition 8</button>
-          <button class="secondarybtn mediumfontsize">Tradition 9</button>
-          <button class="secondarybtn mediumfontsize">Tradition 10</button>
-          <button class="secondarybtn mediumfontsize">Tradition 11</button>
-          <button class="secondarybtn mediumfontsize">Tradition 12</button>
+        <nav id="traditionsnavbar" class="principalsnavbar  mediumfontsize">
+          <button class="secondarybtn">Tradition 1</button>
+          <button class="secondarybtn">Tradition 2</button>
+          <button class="secondarybtn">Tradition 3</button>
+          <button class="secondarybtn">Tradition 4</button>
+          <button class="secondarybtn">Tradition 5</button>
+          <button class="secondarybtn">Tradition 6</button>
+          <button class="secondarybtn">Tradition 7</button>
+          <button class="secondarybtn">Tradition 8</button>
+          <button class="secondarybtn">Tradition 9</button>
+          <button class="secondarybtn">Tradition 10</button>
+          <button class="secondarybtn">Tradition 11</button>
+          <button class="secondarybtn">Tradition 12</button>
         </nav>
         <div class="scrolls">
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
