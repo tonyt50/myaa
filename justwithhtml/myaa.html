@@ -15,7 +15,7 @@
       --primary-color-dark: darkblue;
       --primary-color-lighter: lightblue;
       --secondary-color-dark: #3c7082;
-      --secondary-color-lighter: #999;
+      --secondary-color-lighter: rgb(229, 224, 224);
       --primary-box-shadow: 0 0 1rem 0.3rem rgba(22, 6, 124, 0.4);
       --secondary-box-shadow: 0 0 1rem 0.3rem rgba(243, 239, 10, 0.2);
     }
@@ -33,7 +33,6 @@
       color: var(--secondary-color-lighter);
     }
 
-
     .mediumfontsize {
       font-size: var(--medium-font-size);
     }
@@ -50,7 +49,7 @@
     }
 
     a {
-      color: white;
+      color: inherit;
       text-decoration: none;
     }
 
@@ -74,28 +73,46 @@
 
     /* end CSS Global variables */
 
-    /* buttons */
+    /* document links */
 
-    .secondarybtn {
+    .doclink {
       width: max(24%, 8rem);
-      font: inherit;
       border: 0.2rem solid var(--secondary-color-lighter);
       border-radius: 0.9rem;
       padding: 0.25rem;
       margin-top: 0.5rem;
       margin-left: 0.5%;
-      color: var(--secondary-color-dark);
+      background-color: rgb(28, 10, 121);
+      color: rgb(243, 239, 10);
       transition: all 500ms ease;
-      text-align: center;
-      line-height: 1.5rem;
     }
 
-    .secondarybtn:hover {
+    .doclink:hover {
       background: var(--primary-color-lighter);
       box-shadow: var(--secondary-box-shadow);
     }
 
-    /* end buttons */
+    .doclink:active {
+      box-shadow: none;
+    }
+
+    .doclink a {
+      display: inline-table;
+      cursor: pointer;
+      text-decoration: none;
+      height: 100%;
+      width: 100%;
+    }
+
+    .doclink p {
+      margin: 0 auto;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      line-height: 1.5rem;
+    }
+
+    /* end document links */
 
     /* nav bars */
 
@@ -142,8 +159,11 @@
       flex-direction: column;
       justify-content: center;
       text-align: left;
-      color: aquamarine;
       width: min(51%, 20rem);
+    }
+
+    .principalsshortdescription a:hover {
+      color: rgb(243, 239, 10);
     }
 
     #steps.principalsshortdescription p {
@@ -168,121 +188,317 @@
       <header>header</header>
       <section class="content">
         <nav id="stepsnavbar" class="principalsnavbar">
-          <button class="secondarybtn">Step 1</button>
-          <button class="secondarybtn">Step 2</button>
-          <button class="secondarybtn">Step 3</button>
-          <button class="secondarybtn">Step 4</button>
-          <button class="secondarybtn">Step 5</button>
-          <button class="secondarybtn">Step 6</button>
-          <button class="secondarybtn">Step 7</button>
-          <button class="secondarybtn">Step 8</button>
-          <button class="secondarybtn">Step 9</button>
-          <button class="secondarybtn">Step 10</button>
-          <button class="secondarybtn">Step 11</button>
-          <button class="secondarybtn">Step 12</button>
+          <div id="step01navbar" class="doclink">
+            <a href="#step01">
+              <p>Step 1</p>
+            </a>
+          </div>
+          <div id="step02navbar" class="doclink">
+            <a href="#step02">
+              <p>Step 2</p>
+            </a>
+          </div>
+          <div id="step03navbar" class="doclink">
+            <a href="#step03">
+              <p>Step 3</p>
+            </a>
+          </div>
+          <div id="step04navbar" class="doclink">
+            <a href="#step04">
+              <p>Step 4</p>
+            </a>
+          </div>
+          <div id="step05navbar" class="doclink">
+            <a href="#step05">
+              <p>Step 5</p>
+            </a>
+          </div>
+          <div id="step06navbar" class="doclink">
+            <a href="#step06">
+              <p>Step 6</p>
+            </a>
+          </div>
+          <div id="step07navbar" class="doclink">
+            <a href="#step07">
+              <p>Step 7</p>
+            </a>
+          </div>
+          <div id="step08navbar" class="doclink">
+            <a href="#step08">
+              <p>Step 8</p>
+            </a>
+          </div>
+          <div id="step09navbar" class="doclink">
+            <a href="#step09">
+              <p>Step 9</p>
+            </a>
+          </div>
+          <div id="step10navbar" class="doclink">
+            <a href="#step10">
+              <p>Step 10</p>
+            </a>
+          </div>
+          <div id="step11navbar" class="doclink">
+            <a href="#step11">
+              <p>Step 11</p>
+            </a>
+          </div>
+          <div id="step12navbar" class="doclink">
+            <a href="#step12">
+              <p>Step 12</p>
+            </a>
+          </div>
         </nav>
         <nav id="traditionsnavbar" class="principalsnavbar  mediumfontsize">
-          <button class="secondarybtn">Tradition 1</button>
-          <button class="secondarybtn">Tradition 2</button>
-          <button class="secondarybtn">Tradition 3</button>
-          <button class="secondarybtn">Tradition 4</button>
-          <button class="secondarybtn">Tradition 5</button>
-          <button class="secondarybtn">Tradition 6</button>
-          <button class="secondarybtn">Tradition 7</button>
-          <button class="secondarybtn">Tradition 8</button>
-          <button class="secondarybtn">Tradition 9</button>
-          <button class="secondarybtn">Tradition 10</button>
-          <button class="secondarybtn">Tradition 11</button>
-          <button class="secondarybtn">Tradition 12</button>
+          <div id="tradition01navbar" class="doclink">
+            <a href="#tradition01">
+              <p>Tradition 1</p>
+            </a>
+          </div>
+          <div id="tradition02navbar" class="doclink">
+            <a href="#tradition02">
+              <p>Tradition 2</p>
+            </a>
+          </div>
+          <div id="tradition03navbar" class="doclink">
+            <a href="#tradition03">
+              <p>Tradition 3</p>
+            </a>
+          </div>
+          <div id="tradition04navbar" class="doclink">
+            <a href="#tradition04">
+              <p>Tradition 4</p>
+            </a>
+          </div>
+          <div id="tradition05navbar" class="doclink">
+            <a href="#tradition05">
+              <p>Tradition 5</p>
+            </a>
+          </div>
+          <div id="tradition06navbar" class="doclink">
+            <a href="#tradition06">
+              <p>Tradition 6</p>
+            </a>
+          </div>
+          <div id="tradition07navbar" class="doclink">
+            <a href="#tradition07">
+              <p>Tradition 7</p>
+            </a>
+          </div>
+          <div id="tradition08navbar" class="doclink">
+            <a href="#tradition08">
+              <p>Tradition 8</p>
+            </a>
+          </div>
+          <div id="tradition09navbar" class="doclink">
+            <a href="#tradition09">
+              <p>Tradition 9</p>
+            </a>
+          </div>
+          <div id="tradition10navbar" class="doclink">
+            <a href="#tradition10">
+              <p>Tradition 10</p>
+            </a>
+          </div>
+          <div id="tradition11navbar" class="doclink">
+            <a href="#tradition11">
+              <p>Tradition 11</p>
+            </a>
+          </div>
+          <div id="tradition12navbar" class="doclink">
+            <a href="#tradition12">
+              <p>Tradition 12</p>
+            </a>
+          </div>
         </nav>
         <div class="scrolls">
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
-            <p id="step01">
-              We admitted we were powerless over alcohol, that our lives had become unmanageable.
-            </p>
-            <p id="step02">
-              Came to believe that a Power greater than ourselves could restore us to sanity.
-            </p>
-            <p id="step03">
-              Made a decision to turn our will and our lives over to the care of God as we understood him.
-            </p>
-            <p id="step04">
-              Made a searching and fearless moral inventory of ourselves.
-            </p>
-            <p id="step05">
-              Admitted to God, to ourselves, and to another human being the exact nature of our wrongs.
-            </p>
-            <p id="step06">
-              Were entirely ready to have God remove all these defects of character.
-            </p>
-            <p id="step07">
-              Humbly asked him to remove our shortcomings.
-            </p>
-            <p id="step08">
-              Made a list of all persons we had harmed, and became willing to make amends to them all.
-            </p>
-            <p id="step09">
-              Made direct amends to such people whereever possible, except when to do so would injure them or others.
-            </p>
-            <p id="step10">
-              Continue to take personnel inventory and when we where wrong promptly admitted it.
-            </p>
-            <p id="step11">
-              Sought through prayer and meditation to improve our conscious contact with God as we understood him,
-              praying only for knowledge of his will for us and the power to carry that out.
-            </p>
-            <p id="step12">
-              Having had a spiritual awakening as the result of these steps, we tried to carry this message to
-              alcoholics
-              and practice these principles in all our affairs.
-            </p>
+            <div class="doclink:hover">
+              <a href="#step01navbar">
+                <p id="step01">
+                  We admitted we were powerless over alcohol, that our lives had become unmanageable.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step02navbar">
+                <p id="step02">
+                  Came to believe that a Power greater than ourselves could restore us to sanity.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step03navbar">
+                <p id="step03">
+                  Made a decision to turn our will and our lives over to the care of God as we understood him.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step04navbar">
+                <p id="step04">
+                  Made a searching and fearless moral inventory of ourselves.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step05navbar">
+                <p id="step05">
+                  Admitted to God, to ourselves, and to another human being the exact nature of our wrongs.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step06navbar">
+                <p id="step06">
+                  Were entirely ready to have God remove all these defects of character.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step07navbar">
+                <p id="step07">
+                  Humbly asked him to remove our shortcomings.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step08navbar">
+                <p id="step08">
+                  Made a list of all persons we had harmed, and became willing to make amends to them all.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step09navbar">
+                <p id="step09">
+                  Made direct amends to such people whereever possible, except when to do so would injure them or
+                  others.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step10navbar">
+                <p id="step10">
+                  Continue to take personnel inventory and when we where wrong promptly admitted it.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step11navbar">
+                <p id="step11">
+                  Sought through prayer and meditation to improve our conscious contact with God as we understood him,
+                  praying only for knowledge of his will for us and the power to carry that out.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#step12navbar">
+                <p id="step12">
+                  Having had a spiritual awakening as the result of these steps, we tried to carry this message to
+                  alcoholics
+                  and practice these principles in all our affairs.
+                </p>
+              </a>
+            </div>
           </div>
           <div id="traditions" class="principalsshortdescription mediumfontsize debugoutline">
-            <p id="tradition01">
-              Our common welfare should come first; personal recovery depends upon AA unity.
-            </p>
-            <p id="tradition02">
-              For our group purpose there is but one ultimate authority - a loving God as He may express himself in our
-              group conscience. Our leaders are but trusted servants, they do not govern.
-            </p>
-            <p id="tradition03">
-              The only requirement for AA membership is a desire to stop drinking.
-            </p>
-            <p id="tradition04">
-              Each group should be autonomous except in matters affecting other groups or AA as a whole.
-            </p>
-            <p id="tradition05">
-              Each group has but one primary purpose - to carry its message to the alcholic who still suffers.
-            </p>
-            <p id="tradition06">
-              An AA group ought never endorse, finance, or lend the AA name to any related facility or outside
-              enterprise, lest problems of money, property and prestige divert us from our primary purpose.
-            </p>
-            <p id="tradition07">
-              Every AA group ought to be fully self-supporting, declining outside contributions.
-            </p>
-            <p id="tradition08">
-              Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special
-              workers.
-            </p>
-            <p id="tradition09">
-              AA, as such, ought never be organised, but we may create boards or committes directly responsible to
-              those
-              they serve.
-            </p>
-            <p id="tradition10">
-              Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into public
-              controversy.
-            </p>
-            <p id="tradition11">
-              Our public relations policy is based on attraction rather than promotion; we need always maintain
-              personal
-              anonymity at the level of press, radio and films.
-            </p>
-            <p id="tradition12">
-              Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles before
-              personalities.
-            </p>
+            <div class="doclink:hover">
+              <a href="#tradition01navbar">
+                <p id="tradition01">
+                  Our common welfare should come first; personal recovery depends upon AA unity.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition02navbar">
+                <p id="tradition02">
+                  For our group purpose there is but one ultimate authority - a loving God as He may express himself in
+                  our
+                  group conscience. Our leaders are but trusted servants, they do not govern.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition03navbar">
+                <p id="tradition03">
+                  The only requirement for AA membership is a desire to stop drinking.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition04navbar">
+                <p id="tradition04">
+                  Each group should be autonomous except in matters affecting other groups or AA as a whole.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition05navbar">
+                <p id="tradition05">
+                  Each group has but one primary purpose - to carry its message to the alcholic who still suffers.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition06navbar">
+                <p id="tradition06">
+                  An AA group ought never endorse, finance, or lend the AA name to any related facility or outside
+                  enterprise, lest problems of money, property and prestige divert us from our primary purpose.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition07navbar">
+                <p id="tradition07">
+                  Every AA group ought to be fully self-supporting, declining outside contributions.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition08navbar">
+                <p id="tradition08">
+                  Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special
+                  workers.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition09navbar">
+                <p id="tradition09">
+                  AA, as such, ought never be organised, but we may create boards or committes directly responsible to
+                  those
+                  they serve.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition10navbar">
+                <p id="tradition10">
+                  Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into
+                  public
+                  controversy.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition11navbar">
+                <p id="tradition11">
+                  Our public relations policy is based on attraction rather than promotion; we need always maintain
+                  personal
+                  anonymity at the level of press, radio and films.
+                </p>
+              </a>
+            </div>
+            <div class="doclink:hover">
+              <a href="#tradition12navbar">
+                <p id="tradition12">
+                  Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles
+                  before
+                  personalities.
+                </p>
+              </a>
+            </div>
           </div>
         </div>
         <div class="pertinentideas">
