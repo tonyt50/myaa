@@ -105,12 +105,36 @@
     }
 
     .doclink p {
+      position: relative;
       margin: 0 auto;
       display: table-cell;
       vertical-align: middle;
       text-align: center;
       line-height: 1.5rem;
     }
+
+    p[data-step]:hover::before {
+      display: inline-block;
+      cursor: help;
+    }
+
+    p[data-step]::before {
+      position: absolute;
+      display: none;
+      width: fit-content;
+      height: fit-content;
+      font-size: 1rem;
+      content: "";
+    }
+
+    p[data-step="step01"]::before {
+      content: "We admitted we were powerless over alcohol, that our lives had become unmanageable.";
+    }
+
+    p[data-step="step02"]::before {
+      content: "Came to believe that a Power greater than ourselves could restore us to sanity.";
+    }
+
 
     /* end document links */
 
@@ -190,12 +214,12 @@
         <nav id="stepsnavbar" class="principalsnavbar">
           <div id="step01navbar" class="doclink">
             <a href="#step01">
-              <p>Step 1</p>
+              <p data-step="step01">Step 1</p>
             </a>
           </div>
           <div id="step02navbar" class="doclink">
             <a href="#step02">
-              <p>Step 2</p>
+              <p data-step="step02">Step 2</p>
             </a>
           </div>
           <div id="step03navbar" class="doclink">
