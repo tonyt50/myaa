@@ -113,12 +113,12 @@
       line-height: 1.5rem;
     }
 
-    p[data-step]:hover::before {
+    p[tooltip]:hover::before {
       display: inline-block;
       cursor: help;
     }
 
-    p[data-step]::before {
+    p[tooltip]::before {
       position: absolute;
       display: none;
       width: fit-content;
@@ -127,11 +127,11 @@
       content: "";
     }
 
-    p[data-step="step01"]::before {
+    p[data="step01"]::before {
       content: "We admitted we were powerless over alcohol, that our lives had become unmanageable.";
     }
 
-    p[data-step="step02"]::before {
+    p[data="step02"]::before {
       content: "Came to believe that a Power greater than ourselves could restore us to sanity.";
     }
 
@@ -214,12 +214,12 @@
         <nav id="stepsnavbar" class="principalsnavbar">
           <div id="step01navbar" class="doclink">
             <a href="#step01">
-              <p data-step="step01">Step 1</p>
+              <p data="step01" tooltip>Step 1</p>
             </a>
           </div>
           <div id="step02navbar" class="doclink">
             <a href="#step02">
-              <p data-step="step02">Step 2</p>
+              <p data="step02" tooltip>Step 2</p>
             </a>
           </div>
           <div id="step03navbar" class="doclink">
@@ -339,16 +339,12 @@
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
             <div class="doclink:hover">
               <a href="#step01navbar">
-                <p id="step01">
-                  We admitted we were powerless over alcohol, that our lives had become unmanageable.
-                </p>
+                <p id="step01" data="step01"></p>
               </a>
             </div>
             <div class="doclink:hover">
               <a href="#step02navbar">
-                <p id="step02">
-                  Came to believe that a Power greater than ourselves could restore us to sanity.
-                </p>
+                <p id="step02" data="step02"></p>
               </a>
             </div>
             <div class="doclink:hover">
