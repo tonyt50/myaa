@@ -56,6 +56,7 @@
 
     a {
       color: inherit;
+      cursor: inherit;
       text-decoration: none;
     }
 
@@ -92,18 +93,16 @@
       box-shadow: var(--secondary-box-shadow);
     }
 
-    .doclink a {
+    .doclink.doclinkbutton {
       position: relative;
       display: block;
-      cursor: pointer;
       text-align: center;
       line-height: 1.5rem;
-      width: 100%;
+      cursor: help;
     }
 
     [usebeforedataastooltip]:hover::before {
       display: inline-block;
-      cursor: help;
     }
 
     [usebeforedataastooltip]::before {
@@ -293,80 +292,56 @@
       <header>header</header>
       <section class="content">
         <nav id="stepsnavbar" class="principalsnavbar">
-          <div id="step01navbar" class="doclink">
-            <a href="#step01" beforedata="step01" usebeforedataastooltip>Step 1</a>
-          </div>
-          <div id="step02navbar" class="doclink">
-            <a href="#step02" beforedata="step02" usebeforedataastooltip>Step 2</a>
-          </div>
-          <div id="step03navbar" class="doclink">
-            <a href="#step03" beforedata="step03" usebeforedataastooltip>Step 3</a>
-          </div>
-          <div id="step04navbar" class="doclink">
-            <a href="#step04" beforedata="step04" usebeforedataastooltip>Step 4</a>
-          </div>
-          <div id="step05navbar" class="doclink">
-            <a href="#step05" beforedata="step05" usebeforedataastooltip>Step 5</a>
-          </div>
-          <div id="step06navbar" class="doclink">
-            <a href="#step06" beforedata="step06" usebeforedataastooltip>Step 6</a>
-          </div>
-          <div id="step07navbar" class="doclink">
-            <a href="#step07" beforedata="step07" usebeforedataastooltip>Step 7</a>
-          </div>
-          <div id="step08navbar" class="doclink">
-            <a href="#step08" beforedata="step08" usebeforedataastooltip>Step 8</a>
-          </div>
-          <div id="step09navbar" class="doclink">
-            <a href="#step09" beforedata="step09" usebeforedataastooltip>Step 9</a>
-          </div>
-          <div id="step10navbar" class="doclink">
-            <a href="#step10" beforedata="step10" usebeforedataastooltip>Step 10</a>
-          </div>
-          <div id="step11navbar" class="doclink">
-            <a href="#step11" beforedata="step11" usebeforedataastooltip>Step 11</a>
-          </div>
-          <div id="step12navbar" class="doclink">
-            <a href="#step12" beforedata="step12" usebeforedataastooltip>Step 12</a>
-          </div>
+          <a id="step01navbar" class="doclink doclinkbutton" href="#step01" beforedata="step01"
+            usebeforedataastooltip>Step 1</a>
+          <a id="step02navbar" class="doclink doclinkbutton" href="#step02" beforedata="step02"
+            usebeforedataastooltip>Step 2</a>
+          <a id="step03navbar" class="doclink doclinkbutton" href="#step03" beforedata="step03"
+            usebeforedataastooltip>Step 3</a>
+          <a id="step04navbar" class="doclink doclinkbutton" href="#step04" beforedata="step04"
+            usebeforedataastooltip>Step 4</a>
+          <a id="step05navbar" class="doclink doclinkbutton" href="#step05" beforedata="step05"
+            usebeforedataastooltip>Step 5</a>
+          <a id="step06navbar" class="doclink doclinkbutton" href="#step06" beforedata="step06"
+            usebeforedataastooltip>Step 6</a>
+          <a id="step07navbar" class="doclink doclinkbutton" href="#step07" beforedata="step07"
+            usebeforedataastooltip>Step 7</a>
+          <a id="step08navbar" class="doclink doclinkbutton" href="#step08" beforedata="step08"
+            usebeforedataastooltip>Step 8</a>
+          <a id="step09navbar" class="doclink doclinkbutton" href="#step09" beforedata="step09"
+            usebeforedataastooltip>Step 9</a>
+          <a id="step10navbar" class="doclink doclinkbutton" href="#step10" beforedata="step10"
+            usebeforedataastooltip>Step 10</a>
+          <a id="step11navbar" class="doclink doclinkbutton" href="#step11" beforedata="step11"
+            usebeforedataastooltip>Step 11</a>
+          <a id="step12navbar" class="doclink doclinkbutton" href="#step12" beforedata="step12"
+            usebeforedataastooltip>Step 12</a>
         </nav>
         <nav id="traditionsnavbar" class="principalsnavbar  mediumfontsize">
-          <div id="tradition01navbar" class="doclink">
-            <a href="#tradition01" beforedata="tradition01" usebeforedataastooltip>Tradition 1</a>
-          </div>
-          <div id="tradition02navbar" class="doclink">
-            <a href="#tradition02" beforedata="tradition02" usebeforedataastooltip>Tradition 2</a>
-          </div>
-          <div id="tradition03navbar" class="doclink">
-            <a href="#tradition03" beforedata="tradition03" usebeforedataastooltip>Tradition 3</a>
-          </div>
-          <div id="tradition04navbar" class="doclink">
-            <a href="#tradition04" beforedata="tradition04" usebeforedataastooltip>Tradition 4</a>
-          </div>
-          <div id="tradition05navbar" class="doclink">
-            <a href="#tradition05" beforedata="tradition05" usebeforedataastooltip>Tradition 5</a>
-          </div>
-          <div id="tradition06navbar" class="doclink">
-            <a href="#tradition06" beforedata="tradition05" usebeforedataastooltip>Tradition 6</a>
-          </div>
-          <div id="tradition07navbar" class="doclink">
-            <a href="#tradition07" beforedata="tradition07" usebeforedataastooltip>Tradition 7</a>
-          </div>
-          <div id="tradition08navbar" class="doclink">
-            <a href="#tradition08" beforedata="tradition08" usebeforedataastooltip>Tradition 8</a>
-          </div>
-          <div id="tradition09navbar" class="doclink">
-            <a href="#tradition09" beforedata="tradition09" usebeforedataastooltip>Tradition 9</a>
-          </div>
-          <div id="tradition10navbar" class="doclink">
-            <a href="#tradition10" beforedata="tradition10" usebeforedataastooltip>Tradition 10</a>
-          </div>
-          <div id="tradition11navbar" class="doclink">
-            <a href="#tradition11" beforedata="tradition11" usebeforedataastooltip>Tradition 11</a>
-          </div>
-          <div id="tradition12navbar" class="doclink">
-            <a href="#tradition12" beforedata="tradition12" usebeforedataastooltip>Tradition 12</a>
-          </div>
+          <a id="tradition01navbar" class="doclink doclinkbutton" href="#tradition01" beforedata="tradition01"
+            usebeforedataastooltip>Tradition 1</a>
+          <a id="tradition02navbar" class="doclink doclinkbutton" href="#tradition02" beforedata="tradition02"
+            usebeforedataastooltip>Tradition 2</a>
+          <a id="tradition03navbar" class="doclink doclinkbutton" href="#tradition03" beforedata="tradition03"
+            usebeforedataastooltip>Tradition 3</a>
+          <a id="tradition04navbar" class="doclink doclinkbutton" href="#tradition04" beforedata="tradition04"
+            usebeforedataastooltip>Tradition 4</a>
+          <a id="tradition05navbar" class="doclink doclinkbutton" href="#tradition05" beforedata="tradition05"
+            usebeforedataastooltip>Tradition 5</a>
+          <a id="tradition06navbar" class="doclink doclinkbutton" href="#tradition06" beforedata="tradition05"
+            usebeforedataastooltip>Tradition 6</a>
+          <a id="tradition07navbar" class="doclink doclinkbutton" href="#tradition07" beforedata="tradition07"
+            usebeforedataastooltip>Tradition 7</a>
+          <a id="tradition08navbar" class="doclink doclinkbutton" href="#tradition08" beforedata="tradition08"
+            usebeforedataastooltip>Tradition 8</a>
+          <a id="tradition09navbar" class="doclink doclinkbutton" href="#tradition09" beforedata="tradition09"
+            usebeforedataastooltip>Tradition 9</a>
+          <a id="tradition10navbar" class="doclink doclinkbutton" href="#tradition10" beforedata="tradition10"
+            usebeforedataastooltip>Tradition 10</a>
+          <a id="tradition11navbar" class="doclink doclinkbutton" href="#tradition11" beforedata="tradition11"
+            usebeforedataastooltip>Tradition 11</a>
+          <a id="tradition12navbar" class="doclink doclinkbutton" href="#tradition12" beforedata="tradition12"
+            usebeforedataastooltip>Tradition 12</a>
         </nav>
         <div class="scrolls">
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
