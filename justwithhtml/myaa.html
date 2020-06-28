@@ -12,13 +12,14 @@
       --medium-font-size: 70%;
       font-size: var(--full-font-size);
       --adj-sibbling-margin: 1em 0 0 0;
+      --normal-text: rgb(229, 224, 224);
+      --normal-text-inverse: rgb(243, 239, 10);
       --primary-color: blue;
       --primary-color-dark: darkblue;
       --primary-color-lighter: lightblue;
-      --secondary-color-dark: #3c7082;
-      --secondary-color-lighter: rgb(229, 224, 224);
+      --primary-color-duller: #3c7082;
       --primary-box-shadow: 0 0 1rem 0.3rem rgba(22, 6, 124, 0.4);
-      --secondary-box-shadow: 0 0 1rem 0.3rem rgba(243, 239, 10, 0.2);
+      --secondary-box-shadow: 0 0 1rem 0.3rem rgba(243, 239, 10, 0.4);
     }
 
     * {
@@ -34,8 +35,8 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background-color: var(--secondary-color-dark);
-      color: var(--secondary-color-lighter);
+      background-color: var(--primary-color-duller);
+      color: var(--normal-text);
     }
 
     .mediumfontsize {
@@ -78,11 +79,11 @@
 
     .doclink {
       width: max(24%, 8rem);
-      border: 0.2rem solid var(--secondary-color-lighter);
+      border: 0.2rem solid var(--normal-text);
       border-radius: 0.9rem;
       padding: 0.25rem;
-      background-color: rgb(28, 10, 121);
-      color: rgb(243, 239, 10);
+      background-color: var(--primary-color-dark);
+      color: var(--normal-text-inverse);
       transition: all 500ms ease;
     }
 
@@ -95,7 +96,6 @@
       position: relative;
       display: block;
       cursor: pointer;
-      text-decoration: none;
       text-align: center;
       line-height: 1.5rem;
       width: 100%;
@@ -218,7 +218,7 @@
     .principalsnavbar {
       height: 100%;
       padding: 2rem;
-      border: 0.4rem solid var(--secondary-color-lighter);
+      border: 0.4rem solid var(--normal-text);
       border-radius: 3rem;
       box-shadow: var(--primary-box-shadow);
       display: flex;
@@ -246,7 +246,7 @@
     .scrolls {
       height: 100%;
       padding: 2rem;
-      border: 0.4rem solid var(--secondary-color-lighter);
+      border: 0.4rem solid var(--normal-text);
       border-radius: 3rem;
       box-shadow: var(--primary-box-shadow);
       display: flex;
@@ -268,15 +268,15 @@
     }
 
     .principalsshortdescription a:hover {
-      color: rgb(243, 239, 10);
+      color: var(--normal-text-inverse);
     }
 
-    #steps.principalsshortdescription p {
+    #steps.principalsshortdescription a {
       font-size: 100%;
       width: min(100%, 55ch);
     }
 
-    #traditions.principalsshortdescription p {
+    #traditions.principalsshortdescription a {
       font-size: 90%;
       width: min(100%, 60ch);
     }
@@ -370,167 +370,32 @@
         </nav>
         <div class="scrolls">
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
-            <div class="doclink:hover">
-              <a href="#step01navbar">
-                <p id="step01" beforedata="step01">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step02navbar">
-                <p id="step02" beforedata="step02">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step03navbar">
-                <p id="step03" beforedata="step03">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step04navbar">
-                <p id="step04" beforedata="step04">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step05navbar">
-                <p id="step05" beforedata="step05">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step06navbar">
-                <p id="step06" beforedata="step06">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step07navbar">
-                <p id="step07" beforedata="step07">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step08navbar">
-                <p id="step08" beforedata="step08">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step09navbar">
-                <p id="step09" beforedata="step09">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step10navbar">
-                <p id="step10" beforedata="step10">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step11navbar">
-                <p id="step11" beforedata="step11">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#step12navbar">
-                <p id="step12" beforedata="step12">
-                </p>
-              </a>
-            </div>
+            <a href="#step01navbar" id="step01" beforedata="step01"></a>
+            <a href="#step02navbar" id="step02" beforedata="step02"></a>
+            <a href="#step03navbar" id="step03" beforedata="step03"></a>
+            <a href="#step04navbar" id="step04" beforedata="step04"></a>
+            <a href="#step05navbar" id="step05" beforedata="step05"></a>
+            <a href="#step06navbar" id="step06" beforedata="step06"></a>
+            <a href="#step07navbar" id="step07" beforedata="step07"></a>
+            <a href="#step08navbar" id="step08" beforedata="step08"></a>
+            <a href="#step09navbar" id="step09" beforedata="step09"></a>
+            <a href="#step10navbar" id="step10" beforedata="step10"></a>
+            <a href="#step11navbar" id="step11" beforedata="step11"></a>
+            <a href="#step12navbar" id="step12" beforedata="step12"></a>
           </div>
           <div id="traditions" class="principalsshortdescription mediumfontsize debugoutline">
-            <div class="doclink:hover">
-              <a href="#tradition01navbar">
-                <p id="tradition01" beforedata="tradition01">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition02navbar">
-                <p id="tradition02" beforedata="tradition02">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition03navbar">
-                <p id="tradition03" beforedata="tradition03">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition04navbar">
-                <p id="tradition04" beforedata="tradition04">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition05navbar">
-                <p id="tradition05" beforedata="tradition05">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition06navbar">
-                <p id="tradition06" beforedata="tradition06">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition07navbar">
-                <p id="tradition07" beforedata="tradition07">
-
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition08navbar">
-                <p id="tradition08" beforedata="tradition08">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition09navbar">
-                <p id="tradition09" beforedata="tradition09">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition10navbar">
-                <p id="tradition10" beforedata="tradition10">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition11navbar">
-                <p id="tradition11" beforedata="tradition11">
-                </p>
-              </a>
-            </div>
-            <div class="doclink:hover">
-              <a href="#tradition12navbar">
-                <p id="tradition12" beforedata="tradition12">
-                </p>
-              </a>
-            </div>
+            <a href="#tradition01navbar" id="tradition01" beforedata="tradition01"></a>
+            <a href="#tradition02navbar" id="tradition02" beforedata="tradition02"></a>
+            <a href="#tradition03navbar" id="tradition03" beforedata="tradition03"></a>
+            <a href="#tradition04navbar" id="tradition04" beforedata="tradition04"></a>
+            <a href="#tradition05navbar" id="tradition05" beforedata="tradition05"></a>
+            <a href="#tradition06navbar" id="tradition06" beforedata="tradition06"></a>
+            <a href="#tradition07navbar" id="tradition07" beforedata="tradition07"></a>
+            <a href="#tradition08navbar" id="tradition08" beforedata="tradition08"></a>
+            <a href="#tradition09navbar" id="tradition09" beforedata="tradition09"></a>
+            <a href="#tradition10navbar" id="tradition10" beforedata="tradition10"></a>
+            <a href="#tradition11navbar" id="tradition11" beforedata="tradition11"></a>
+            <a href="#tradition12navbar" id="tradition12" beforedata="tradition12"></a>
           </div>
         </div>
         <div class="pertinentideas">
