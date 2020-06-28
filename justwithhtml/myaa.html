@@ -11,6 +11,7 @@
       --full-font-size: clamp(1rem, 0.75rem + 1.25vw, 2rem);
       --medium-font-size: 70%;
       font-size: var(--full-font-size);
+      --adj-sibbling-margin: 1em 0 0 0;
       --primary-color: blue;
       --primary-color-dark: darkblue;
       --primary-color-lighter: lightblue;
@@ -25,6 +26,10 @@
       padding: 0;
       margin: 0;
       line-height: 1.2;
+    }
+
+    *+* {
+      margin: var(--adj-sibbling-margin);
     }
 
     body {
@@ -53,10 +58,6 @@
       text-decoration: none;
     }
 
-    p {
-      margin: 0.5rem 0;
-    }
-
     img {
       width: 100%;
     }
@@ -80,8 +81,6 @@
       border: 0.2rem solid var(--secondary-color-lighter);
       border-radius: 0.9rem;
       padding: 0.25rem;
-      margin-top: 0.5rem;
-      margin-left: 0.5%;
       background-color: rgb(28, 10, 121);
       color: rgb(243, 239, 10);
       transition: all 500ms ease;
@@ -217,7 +216,6 @@
     /* nav bars */
 
     .principalsnavbar {
-      margin: 3% 5%;
       height: 100%;
       padding: 2rem;
       border: 0.4rem solid var(--secondary-color-lighter);
@@ -227,6 +225,10 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-evenly;
+    }
+
+    .principalsnavbar>* {
+      margin-top: 1%;
     }
 
     /* end nav bars */
@@ -242,7 +244,6 @@
     /* scrolls steps and traditions */
 
     .scrolls {
-      margin: 3% 5%;
       height: 100%;
       padding: 2rem;
       border: 0.4rem solid var(--secondary-color-lighter);
@@ -252,6 +253,10 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
+    }
+
+    .scrolls>* {
+      margin-top: 0;
     }
 
     .principalsshortdescription {
