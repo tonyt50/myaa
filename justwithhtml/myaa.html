@@ -93,28 +93,21 @@
     }
 
     .doclink a {
-      display: inline-table;
+      position: relative;
+      display: block;
       cursor: pointer;
       text-decoration: none;
-      height: 100%;
+      text-align: center;
+      line-height: 1.5rem;
       width: 100%;
     }
 
-    .doclink p {
-      position: relative;
-      margin: 0 auto;
-      display: table-cell;
-      vertical-align: middle;
-      text-align: center;
-      line-height: 1.5rem;
-    }
-
-    p[usebeforedataastooltip]:hover::before {
+    [usebeforedataastooltip]:hover::before {
       display: inline-block;
       cursor: help;
     }
 
-    p[usebeforedataastooltip]::before {
+    [usebeforedataastooltip]::before {
       position: absolute;
       display: none;
       width: fit-content;
@@ -123,99 +116,99 @@
       content: "";
     }
 
-    p[beforedata="step01"]::before {
+    [beforedata="step01"]::before {
       content: "We admitted we were powerless over alcohol, that our lives had become unmanageable.";
     }
 
-    p[beforedata="step02"]::before {
+    [beforedata="step02"]::before {
       content: "Came to believe that a Power greater than ourselves could restore us to sanity.";
     }
 
-    p[beforedata="step03"]::before {
+    [beforedata="step03"]::before {
       content: "Made a decision to turn our will and our lives over to the care of God as we understood him.";
     }
 
-    p[beforedata="step04"]::before {
+    [beforedata="step04"]::before {
       content: "Made a searching and fearless moral inventory of ourselves.";
     }
 
-    p[beforedata="step05"]::before {
+    [beforedata="step05"]::before {
       content: "Admitted to God, to ourselves, and to another human being the exact nature of our wrongs.";
     }
 
-    p[beforedata="step06"]::before {
+    [beforedata="step06"]::before {
       content: "Were entirely ready to have God remove all these defects of character.";
     }
 
-    p[beforedata="step07"]::before {
+    [beforedata="step07"]::before {
       content: "Humbly asked him to remove our shortcomings.";
     }
 
-    p[beforedata="step08"]::before {
+    [beforedata="step08"]::before {
       content: "Made a list of all persons we had harmed, and became willing to make amends to them all.";
     }
 
-    p[beforedata="step09"]::before {
+    [beforedata="step09"]::before {
       content: "Made direct amends to such people whereever possible, except when to do so would injure them or others.";
     }
 
-    p[beforedata="step10"]::before {
+    [beforedata="step10"]::before {
       content: "Continue to take personnel inventory and when we where wrong promptly admitted it.";
     }
 
-    p[beforedata="step11"]::before {
+    [beforedata="step11"]::before {
       content: "Sought through prayer and meditation to improve our conscious contact with God as we understood him, praying only for knowledge of his will for us and the power to carry that out.";
     }
 
-    p[beforedata="step12"]::before {
+    [beforedata="step12"]::before {
       content: "Having had a spiritual awakening as the result of these steps, we tried to carry this message to alcoholics and practice these principles in all our affairs.";
     }
 
-    p[beforedata="tradition01"]::before {
+    [beforedata="tradition01"]::before {
       content: "Our common welfare should come first; personal recovery depends upon AA unity.";
     }
 
-    p[beforedata="tradition02"]::before {
+    [beforedata="tradition02"]::before {
       content: "For our group purpose there is but one ultimate authority - a loving God as He may express himself in our group conscience. Our leaders are but trusted servants, they do not govern.";
     }
 
-    p[beforedata="tradition03"]::before {
+    [beforedata="tradition03"]::before {
       content: "The only requirement for AA membership is a desire to stop drinking.";
     }
 
-    p[beforedata="tradition04"]::before {
+    [beforedata="tradition04"]::before {
       content: "Each group should be autonomous except in matters affecting other groups or AA as a whole.";
     }
 
-    p[beforedata="tradition05"]::before {
+    [beforedata="tradition05"]::before {
       content: "Each group has but one primary purpose - to carry its message to the alcholic who still suffers.";
     }
 
-    p[beforedata="tradition06"]::before {
+    [beforedata="tradition06"]::before {
       content: "An AA group ought never endorse, finance, or lend the AA name to any related facility or outside enterprise, lest problems of money, property and prestige divert us from our primary purpose.";
     }
 
-    p[beforedata="tradition07"]::before {
+    [beforedata="tradition07"]::before {
       content: "Every AA group ought to be fully self-supporting, declining outside contributions.";
     }
 
-    p[beforedata="tradition08"]::before {
+    [beforedata="tradition08"]::before {
       content: "Alcoholics Anonymous should remain forever nonprofessional, but our service centres may employ special workers.";
     }
 
-    p[beforedata="tradition09"]::before {
+    [beforedata="tradition09"]::before {
       content: "AA, as such, ought never be organised, but we may create boards or committes directly responsible to those they serve.";
     }
 
-    p[beforedata="tradition10"]::before {
+    [beforedata="tradition10"]::before {
       content: "Alcoholics Anonymous has no opinion on outside issues; hence the AA name ought never be drawn into public controversy.";
     }
 
-    p[beforedata="tradition11"]::before {
+    [beforedata="tradition11"]::before {
       content: "Our public relations policy is based on attraction rather than promotion; we need always maintain personal anonymity at the level of press, radio and films.";
     }
 
-    p[beforedata="tradition12"]::before {
+    [beforedata="tradition12"]::before {
       content: "Anomymity is the spiritual foundation of all our traditions, ever reminding us to place principles before personalities.";
     }
 
@@ -296,138 +289,94 @@
       <section class="content">
         <nav id="stepsnavbar" class="principalsnavbar">
           <div id="step01navbar" class="doclink">
-            <a href="#step01">
-              <p beforedata="step01" usebeforedataastooltip>Step 1</p>
-            </a>
+            <a href="#step01" beforedata="step01" usebeforedataastooltip>Step 1</a>
           </div>
           <div id="step02navbar" class="doclink">
-            <a href="#step02">
-              <p beforedata="step02" usebeforedataastooltip>Step 2</p>
-            </a>
+            <a href="#step02" beforedata="step02" usebeforedataastooltip>Step 2</a>
           </div>
           <div id="step03navbar" class="doclink">
-            <a href="#step03">
-              <p beforedata="step03" usebeforedataastooltip>Step 3</p>
-            </a>
+            <a href="#step03" beforedata="step03" usebeforedataastooltip>Step 3</a>
           </div>
           <div id="step04navbar" class="doclink">
-            <a href="#step04">
-              <p beforedata="step04" usebeforedataastooltip>Step 4</p>
-            </a>
+            <a href="#step04" beforedata="step04" usebeforedataastooltip>Step 4</a>
           </div>
           <div id="step05navbar" class="doclink">
-            <a href="#step05">
-              <p beforedata="step05" usebeforedataastooltip>Step 5</p>
-            </a>
+            <a href="#step05" beforedata="step05" usebeforedataastooltip>Step 5</a>
           </div>
           <div id="step06navbar" class="doclink">
-            <a href="#step06">
-              <p beforedata="step06" usebeforedataastooltip>Step 6</p>
-            </a>
+            <a href="#step06" beforedata="step06" usebeforedataastooltip>Step 6</a>
           </div>
           <div id="step07navbar" class="doclink">
-            <a href="#step07">
-              <p beforedata="step07" usebeforedataastooltip>Step 7</p>
-            </a>
+            <a href="#step07" beforedata="step07" usebeforedataastooltip>Step 7</a>
           </div>
           <div id="step08navbar" class="doclink">
-            <a href="#step08">
-              <p beforedata="step08" usebeforedataastooltip>Step 8</p>
-            </a>
+            <a href="#step08" beforedata="step08" usebeforedataastooltip>Step 8</a>
           </div>
           <div id="step09navbar" class="doclink">
-            <a href="#step09">
-              <p beforedata="step09" usebeforedataastooltip>Step 9</p>
-            </a>
+            <a href="#step09" beforedata="step09" usebeforedataastooltip>Step 9</a>
           </div>
           <div id="step10navbar" class="doclink">
-            <a href="#step10">
-              <p beforedata="step10" usebeforedataastooltip>Step 10</p>
-            </a>
+            <a href="#step10" beforedata="step10" usebeforedataastooltip>Step 10</a>
           </div>
           <div id="step11navbar" class="doclink">
-            <a href="#step11">
-              <p beforedata="step11" usebeforedataastooltip>Step 11</p>
-            </a>
+            <a href="#step11" beforedata="step11" usebeforedataastooltip>Step 11</a>
           </div>
           <div id="step12navbar" class="doclink">
-            <a href="#step12">
-              <p beforedata="step12" usebeforedataastooltip>Step 12</p>
-            </a>
+            <a href="#step12" beforedata="step12" usebeforedataastooltip>Step 12</a>
           </div>
         </nav>
         <nav id="traditionsnavbar" class="principalsnavbar  mediumfontsize">
           <div id="tradition01navbar" class="doclink">
-            <a href="#tradition01">
-              <p beforedata="tradition01" usebeforedataastooltip>Tradition 1</p>
-            </a>
+            <a href="#tradition01" beforedata="tradition01" usebeforedataastooltip>Tradition 1</a>
           </div>
           <div id="tradition02navbar" class="doclink">
-            <a href="#tradition02">
-              <p beforedata="tradition02" usebeforedataastooltip>Tradition 2</p>
-            </a>
+            <a href="#tradition02" beforedata="tradition02" usebeforedataastooltip>Tradition 2</a>
           </div>
           <div id="tradition03navbar" class="doclink">
-            <a href="#tradition03">
-              <p beforedata="tradition03" usebeforedataastooltip>Tradition 3</p>
-            </a>
+            <a href="#tradition03" beforedata="tradition03" usebeforedataastooltip>Tradition 3</a>
           </div>
           <div id="tradition04navbar" class="doclink">
-            <a href="#tradition04">
-              <p beforedata="tradition04" usebeforedataastooltip>Tradition 4</p>
-            </a>
+            <a href="#tradition04" beforedata="tradition04" usebeforedataastooltip>Tradition 4</a>
           </div>
           <div id="tradition05navbar" class="doclink">
-            <a href="#tradition05">
-              <p beforedata="tradition05" usebeforedataastooltip>Tradition 5</p>
-            </a>
+            <a href="#tradition05" beforedata="tradition05" usebeforedataastooltip>Tradition 5</a>
           </div>
           <div id="tradition06navbar" class="doclink">
-            <a href="#tradition06">
-              <p beforedata="tradition05" usebeforedataastooltip>Tradition 6</p>
-            </a>
+            <a href="#tradition06" beforedata="tradition05" usebeforedataastooltip>Tradition 6</a>
           </div>
           <div id="tradition07navbar" class="doclink">
-            <a href="#tradition07">
-              <p beforedata="tradition07" usebeforedataastooltip>Tradition 7</p>
-            </a>
+            <a href="#tradition07" beforedata="tradition07" usebeforedataastooltip>Tradition 7</a>
           </div>
           <div id="tradition08navbar" class="doclink">
-            <a href="#tradition08">
-              <p beforedata="tradition08" usebeforedataastooltip>Tradition 8</p>
-            </a>
+            <a href="#tradition08" beforedata="tradition08" usebeforedataastooltip>Tradition 8</a>
           </div>
           <div id="tradition09navbar" class="doclink">
-            <a href="#tradition09">
-              <p beforedata="tradition09" usebeforedataastooltip>Tradition 9</p>
-            </a>
+            <a href="#tradition09" beforedata="tradition09" usebeforedataastooltip>Tradition 9</a>
           </div>
           <div id="tradition10navbar" class="doclink">
-            <a href="#tradition10">
-              <p beforedata="tradition10" usebeforedataastooltip>Tradition 10</p>
-            </a>
+            <a href="#tradition10" beforedata="tradition10" usebeforedataastooltip>Tradition 10</a>
           </div>
           <div id="tradition11navbar" class="doclink">
-            <a href="#tradition11">
-              <p beforedata="tradition11" usebeforedataastooltip>Tradition 11</p>
-            </a>
+            <a href="#tradition11" beforedata="tradition11" usebeforedataastooltip>Tradition 11</a>
           </div>
           <div id="tradition12navbar" class="doclink">
-            <a href="#tradition12">
-              <p beforedata="tradition12" usebeforedataastooltip>Tradition 12</p>
-            </a>
+            <a href="#tradition12" beforedata="tradition12" usebeforedataastooltip>Tradition 12</a>
           </div>
         </nav>
         <div class="scrolls">
           <div id="steps" class="principalsshortdescription mediumfontsize debugoutline">
             <div class="doclink:hover">
               <a href="#step01navbar">
-                <p id="step01" beforedata="step01"></p>
+                <p id="step01" beforedata="step01">
+
+                </p>
               </a>
             </div>
             <div class="doclink:hover">
               <a href="#step02navbar">
-                <p id="step02" beforedata="step02"></p>
+                <p id="step02" beforedata="step02">
+
+                </p>
               </a>
             </div>
             <div class="doclink:hover">
@@ -573,8 +522,8 @@
             </div>
             <div class="doclink:hover">
               <a href="#tradition12navbar">
-                <p id="tradition12" beforedata="tradition12" />
-                <!-- </p> -->
+                <p id="tradition12" beforedata="tradition12">
+                </p>
               </a>
             </div>
           </div>
