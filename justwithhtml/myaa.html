@@ -25,11 +25,16 @@
         box-sizing: border-box;
         padding: 0;
         margin: 0;
-        line-height: 1.2;
+        border: 0;
       }
 
       * + * {
         margin: var(--adj-sibbling-margin);
+      }
+
+      .principalsnavbar > *,
+      .scrolls > * {
+        margin: 1%;
       }
 
       body {
@@ -81,9 +86,8 @@
         position: relative;
         display: block;
         text-align: center;
-        line-height: 1.5rem;
         cursor: help;
-        width: max(24%, 8rem);
+        width: 15ch;
         border: 0.2rem solid var(--normal-text);
         border-radius: 0.9rem;
         padding: 0.25rem;
@@ -106,12 +110,10 @@
         display: none;
         background-color: var(--primary-color-dark);
         content: "";
-        outline: 2px dashed green;
+        text-align: left;
         z-index: 1;
-        line-height: 1.2em;
         top: 100%;
         left: 0;
-        /* transform: translateX(-25%) translateY(3em); */
       }
 
       #stepsnavbar [usebeforedataastooltip]::before {
@@ -236,10 +238,6 @@
         justify-content: space-evenly;
       }
 
-      .principalsnavbar > * {
-        margin-top: 1%;
-      }
-
       /* end nav bars */
 
       /* make adaptive  */
@@ -264,16 +262,11 @@
         align-items: flex-start;
       }
 
-      .scrolls > * {
-        margin-top: 0;
-      }
-
       .principalsshortdescription {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: left;
-        width: max(49%, 20rem);
       }
 
       .principalsshortdescription a:hover {
@@ -281,13 +274,12 @@
       }
 
       #steps.principalsshortdescription a {
-        font-size: 100%;
-        width: min(100%, 55ch);
+        width: 55ch;
       }
 
       #traditions.principalsshortdescription a {
         font-size: 90%;
-        width: min(100%, 60ch);
+        width: 60ch;
       }
 
       /* end scrolls steps and traditions */
