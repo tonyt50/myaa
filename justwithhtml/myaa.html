@@ -13,6 +13,7 @@
         --adj-sibbling-margin: 1em 0 0 0;
         --normal-text: rgb(229, 224, 224);
         --normal-text-inverse: rgb(243, 239, 10);
+        --normal-text-highlight: red;
         --primary-color: blue;
         --primary-color-dark: darkblue;
         --primary-color-lighter: lightblue;
@@ -108,13 +109,12 @@
       [usebeforedataastooltip]::before {
         position: absolute;
         display: none;
-        color: red;
+        color: var(--normal-text-highlight);
         background-color: inherit;
         box-shadow: inherit;
         border: 0.2rem solid var(--normal-text);
         border-radius: 0.9rem;
         padding: 0.25rem;
-        /* opacity: 0.8; */
         content: "";
         text-align: left;
         z-index: 1;
@@ -124,12 +124,10 @@
 
       #stepsnavbar [usebeforedataastooltip]::before {
         font-size: var(--medium-font-size);
-        width: max(100%, 55ch);
       }
 
       #traditionsnavbar [usebeforedataastooltip]::before {
         font-size: calc(var(--medium-font-size) * 0.9);
-        width: max(100%, 60ch);
       }
 
       [beforedata="step01"]::before {
@@ -165,7 +163,7 @@
       }
 
       [beforedata="step09"]::before {
-        content: "Made direct amends to such people whereever possible, except when to do so would injure them or others.";
+        content: "Made direct amends to such people wherever possible, except when to do so would injure them or others.";
       }
 
       [beforedata="step10"]::before {
@@ -275,7 +273,7 @@
       }
 
       .principalsshortdescription a:hover {
-        color: var(--normal-text-inverse);
+        color: var(--normal-text-highlight);
       }
 
       #steps.principalsshortdescription a {
